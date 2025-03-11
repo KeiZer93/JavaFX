@@ -1,4 +1,4 @@
-package appli.todolistfx.accueil;
+package appli.accueil;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;

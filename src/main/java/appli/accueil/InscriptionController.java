@@ -1,4 +1,4 @@
-package appli.todolistfx.accueil;
+package appli.accueil;
 
 public class InscriptionController {
 }
