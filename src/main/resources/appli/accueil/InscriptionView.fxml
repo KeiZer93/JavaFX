@@ -1,14 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="appli.accueil.InscriptionController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="462.0" prefWidth="255.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appli.accueil.InscriptionController">
+   <children>
+      <Label layoutX="80.0" layoutY="20.0" text="Inscription">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Nom" layoutX="8.0" layoutY="85.0" onAction="#Inscription" prefHeight="25.0" prefWidth="239.0" />
+      <TextField fx:id="Prenom" layoutX="8.0" layoutY="148.0" onAction="#Inscription" prefHeight="25.0" prefWidth="239.0" />
+      <TextField fx:id="email" layoutX="8.0" layoutY="218.0" onAction="#Inscription" prefHeight="25.0" prefWidth="239.0" />
+      <TextField fx:id="mdp" layoutX="8.0" layoutY="284.0" onAction="#Inscription" prefHeight="25.0" prefWidth="239.0" />
+      <TextField fx:id="pass" layoutX="8.0" layoutY="350.0" onAction="#Inscription" prefHeight="25.0" prefWidth="239.0" />
+      <Button fx:id="bountonInscription" layoutX="83.0" layoutY="404.0" mnemonicParsing="false" onAction="#Inscription" prefHeight="25.0" prefWidth="85.0" text="Inscription" />
+      <Button fx:id="boutonRetour" layoutX="96.0" layoutY="449.0" mnemonicParsing="false" onAction="#retourConnexion" prefHeight="25.0" prefWidth="59.0" text="Retour" />
+      <Label layoutX="113.0" layoutY="59.0" text="Nom" />
+      <Label layoutX="105.0" layoutY="120.0" text="Prénom" />
+      <Label layoutX="90.0" layoutY="256.0" text="Mot de passe" />
+      <Label layoutX="113.0" layoutY="187.0" text="Email" />
+      <Label layoutX="91.0" layoutY="317.0" text="Confirmation" />
+      <Label fx:id="labelErreur" layoutX="112.0" layoutY="386.0" text="Label" />
+   </children>
 </AnchorPane>

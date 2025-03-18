@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" prefHeight="446.0" prefWidth="371.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="appli.accueil.LoginController">
+<VBox alignment="CENTER" prefHeight="447.0" prefWidth="349.0" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="appli.accueil.LoginController">
   <padding>
     <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
   </padding>
@@ -29,10 +29,11 @@
       </font>
    </Label>
    <PasswordField />
+   <Label text="label pour erreur" textFill="#fa0a0a" />
 
   <Label fx:id="welcomeText" />
-   <Button mnemonicParsing="false" text="Connexion" />
-   <Button mnemonicParsing="false" text="mot de passe oublié" />
-   <Button mnemonicParsing="false" text="inscription" />
+   <Button fx:id="boutonconnexion" mnemonicParsing="false" onAction="#Login" text="Connexion" />
+   <Button mnemonicParsing="false" onAction="#btnMdpOublie" text="mot de passe oublié" />
+   <Button mnemonicParsing="false" onAction="#retourInscription" text="inscription" />
 
 </VBox>
